@@ -1,2 +1,0 @@
-# HERTECHTRAIL
-Repo for HERTECHTRAIL Assignments
