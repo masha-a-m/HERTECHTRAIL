@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables</title>
- </head>
- <body>
-    <header>
-        <h6>A test table with merged cells</h6>
-    </header>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+    </style>
+</head>
+<html>
     <main>
-	    <table>
-		    <thead>
-			    <tr>
-				    <th>Average</th>
-                    <th>height</th>
-                    <th>weight</th>
-				    <th>Red <br /> Eyes</th>
-			    </tr>
-            </thead>
-            <tbody>
+        <div style="text-align:center">
+            <i>A test table with merged cells</i>
+
+        </div>
+       
+            <table class="center"> 
+                <col>
+                <colgroup span="2"></colgroup>
                 <tr>
-                    <td>Males</td>
-                    <td>1.9</td>
-                    <td>0.003</td>
-                    <td>40%</td>
+                    <td rowspan="2"></td>
+                    <th colspan="2" scope="colgroup">Average</th>
+                    <th rowspan="2">Red <br /> eyes</th>
                 </tr>
                 <tr>
-                    <td>Females</td>
+                    <th scope="col">height</th>
+                    <th scope="col">weight</th>
+                </tr>
+                
+                <tr>
+                    <th>Males</th>
+                    <td>1.9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td>0.003 &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td>40% &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                </tr>
+                
+                <tr>
+                    <th>Females</th>
                     <td>1.7</td>
                     <td>0.002</td>
                     <td>43%</td>
                 </tr>
+              
+            </table>
+       
+       
 
-            </tbody>
-
+    </main>
+</html>
 			   
 
